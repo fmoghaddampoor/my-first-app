@@ -11,4 +11,8 @@ export class ServerComponent {
 
   // Server status
   serverStatus: string = 'Down';
+
+  getServerStatus(){
+    return this.serverStatus;
+  }
 }
