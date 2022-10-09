@@ -16,6 +16,8 @@ export class ServerComponent {
   allowNewServer: boolean = false;
 
   serverCreationStatus: string = "No server is created";
+  serverName: string = "First server"
+  serverCreation: boolean = false;
 
   constructor() {
     setTimeout(() => {
@@ -28,6 +30,7 @@ export class ServerComponent {
   }
 
   OnCreateServer(){
+    this.serverCreation = true;
     this.serverCreationStatus = 'New server is created successfully';
   }
 }
