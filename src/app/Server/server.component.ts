@@ -13,7 +13,15 @@ export class ServerComponent {
   // Server status
   serverStatus: string = 'Down';
 
-  getServerStatus(){
+  allowNewServer: boolean = false;
+
+  constructor() {
+    setTimeout(() => {
+      this.allowNewServer = true;
+    }, 2000);
+  }
+
+  getServerStatus() {
     return this.serverStatus;
   }
 }
