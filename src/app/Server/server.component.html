@@ -17,5 +17,15 @@
 <button class="btn btn-primary" [disabled]="!allowNewServer">New server</button>
 
 <br>
+
+
+<button class="btn btn-primary"
+        [disabled]="!allowNewServer"
+        (click)="OnCreateServer()">New server
+</button>
+
+<p>{{ serverCreationStatus }}</p>
+
+<br>
 <br>
 
